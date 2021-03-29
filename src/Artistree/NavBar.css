@@ -1,0 +1,10 @@
+.navbar {
+    background-color: #068e03;
+    height: 150px;
+}
+
+.logo {
+    position: absolute;
+    left: 5px;
+    top: 0px;
+}
