@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Artistree
+
+Jake Waclawski (jmw3638)
+Shane Burke (sdb5978) 
+Miguel Rosario (mr2527)
+Jianyu Wang (jw3513)
+Saadman Tareq (st7941)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
