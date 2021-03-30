@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { CanvasTool } from './CanvasTool';
 import './Canvas.css';
 
 class Canvas extends React.Component {
@@ -15,7 +16,12 @@ class Canvas extends React.Component {
                     <div>Canvas</div>
                 </div>
                 <div className="page-body">
-                    Canvas
+                    <div className="canvas-with-tools">
+                        <div className="canvas"></div>
+                        <div className="tools">
+                            <CanvasTool></CanvasTool>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
