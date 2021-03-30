@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Modal, ModalHeader, ModalBody, ModalFooter
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Button
 } from 'reactstrap'
 
 import Logo from './artistree_logo.png';
@@ -11,8 +11,20 @@ class NavBar extends React.Component {
         super(props);
         this.state = { 
             hamburgerOpen: false,
-            modalOpen: false,
+            loginModalOpen: false,
+            loginLogoutText: "Login",
         };
+    }
+
+    loginLogout = () => {
+        if (this.state.loginLogoutText === "Login") {
+            this.setState({
+                loginModalOpen: true,
+                loginLogoutText: "Logout",
+            });
+        } else {
+            this.setState({loginLogoutText: "Login"});
+        }
     }
 
     render() {
@@ -25,9 +37,17 @@ class NavBar extends React.Component {
                     <Link to="/my-submissions"><span className="navbar-link">My Submissions</span></Link>
                 </div>
                 <div>
-                    <Modal isOpen={this.state.modalOpen} toggle={() => this.setState({modalOpen: !this.state.modalOpen})}>
-                        <ModalHeader>Hello</ModalHeader>
-                        <ModalBody>World</ModalBody>
+                    <Modal isOpen={this.state.loginModalOpen} toggle={() => this.setState({loginModalOpen: !this.state.loginModalOpen})}>
+                        <ModalHeader toggle={() => this.setState({loginModalOpen: false})}>Login to Artistree</ModalHeader>
+                        <ModalBody>
+                            <Label>Username</Label>
+                            <Input />
+                            <Label>Password</Label>
+                            <Input type="password" />
+                        </ModalBody>
+                        <ModalFooter>
+                            <Button color="success" onClick={() => this.setState({loginModalOpen: false})}>Submit</Button>
+                        </ModalFooter>
                     </Modal>
                 </div>
                 <div>
@@ -36,8 +56,7 @@ class NavBar extends React.Component {
                             <span className="material-icons hamburger-icon">menu</span>
                         </DropdownToggle>
                         <DropdownMenu>
-                            <DropdownItem onClick={() => this.setState({modalOpen: true})}>Login</DropdownItem>
-                            <DropdownItem>Logout</DropdownItem>
+                            <DropdownItem onClick={this.loginLogout}>{this.state.loginLogoutText}</DropdownItem>
                             <DropdownItem>Account</DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
