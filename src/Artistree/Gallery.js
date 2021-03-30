@@ -17,7 +17,7 @@ class Gallery extends React.Component {
     }
 
     componentDidMount () {
-        const grid = this.buildGrid(10);
+        const grid = this.buildGrid(12);
         this.setState({grid: grid});
     }
 
