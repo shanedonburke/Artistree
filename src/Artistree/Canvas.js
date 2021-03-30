@@ -10,11 +10,11 @@ class Canvas extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="canvas-root">
                 <div className="title-bar">
                     <div>Canvas</div>
                 </div>
-                <div>
+                <div className="page-body">
                     Canvas
                 </div>
             </div>
