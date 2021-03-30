@@ -1,0 +1,19 @@
+.tool-button {
+    display: flex;
+    flex-basis: calc(50% - 10px);
+    flex-direction: column;
+    height: 100px;
+    background-color: #BABABA;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.material-icons-outlined {
+    font-size: 36px;
+}
+
+.material-icons {
+    font-size: 36px;
+}

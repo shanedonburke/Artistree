@@ -25,4 +25,6 @@
     width: 280px;
     background-color: #CFCFCF;
     display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
 }
