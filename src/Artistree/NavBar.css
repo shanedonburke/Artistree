@@ -32,4 +32,6 @@
     color: white;
     font-size: 50px;
     margin-right: 48px;
+    cursor: pointer;
+    caret-color: transparent;
 }

@@ -51,7 +51,7 @@ class NavBar extends React.Component {
                     </Modal>
                 </div>
                 <div>
-                    <Dropdown isOpen={this.state.hamburgerOpen} toggle={() => this.setState({hamburgerOpen: !this.state.hamburgerOpen})}>
+                    <Dropdown direction="left" isOpen={this.state.hamburgerOpen} toggle={() => this.setState({hamburgerOpen: !this.state.hamburgerOpen})}>
                         <DropdownToggle tag="span" data-toggle="dropdown" aria-expanded={this.state.hamburgerOpen}>
                             <span className="material-icons hamburger-icon">menu</span>
                         </DropdownToggle>
