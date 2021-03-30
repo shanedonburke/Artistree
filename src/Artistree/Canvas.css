@@ -1,0 +1,9 @@
+.canvas-root {
+    height: 100%;
+}
+
+.page-body {
+    background-color: #70480D;
+    height: 100%;
+    width: 100%;
+}
