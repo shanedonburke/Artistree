@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Gallery extends React.Component {
+class Canvas extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -9,9 +9,9 @@ class Gallery extends React.Component {
     render() {
         return (
             <div>
-                Gallery
+                Canvas
             </div>
         );
     }
 }
-export default Gallery;
+export default Canvas;
