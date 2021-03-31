@@ -1,13 +1,15 @@
 .tool-button {
     display: flex;
-    flex-basis: calc(50% - 10px);
+    flex-basis: calc(33.33333% - 10px);
     flex-direction: column;
+    justify-content: space-between !important;
     height: 100px;
     background-color: #BABABA;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     margin: 5px;
+    padding: 10px;
 }
 
 .material-icons-outlined {

@@ -21,13 +21,13 @@ class Canvas extends React.Component {
                         <div className="tools">
                             <CanvasTool toolName="Brush" iconName="brush" iconClass="material-icons-outlined"></CanvasTool>
                             <CanvasTool toolName="Pencil" iconName="create" iconClass="material-icons-outlined"></CanvasTool>
-                            <CanvasTool toolName="Choose Color" iconName="palette" iconClass="material-icons" iconColor="red"></CanvasTool>
                             <CanvasTool toolName="Fill" iconName="format_color_fill" iconClass="material-icons-outlined"></CanvasTool>
-                            <CanvasTool toolName="Text" iconName="title" iconClass="material-icons"></CanvasTool>
                             <CanvasTool toolName="Line" iconName="arrow_right_alt" iconClass="material-icons"></CanvasTool>
                             <CanvasTool toolName="Ellipse" iconName="circle" iconClass="material-icons-outlined"></CanvasTool>
                             <CanvasTool toolName="Rectangle" iconName="crop_16_9" iconClass="material-icons-outlined"></CanvasTool>
+                            <CanvasTool toolName="Choose Color" iconName="palette" iconClass="material-icons" iconColor="red"></CanvasTool>
                             <CanvasTool toolName="Layers" iconName="layers" iconClass="material-icons-outlined"></CanvasTool>
+                            <CanvasTool toolName="Text" iconName="title" iconClass="material-icons"></CanvasTool>
                         </div>
                     </div>
                 </div>
