@@ -7,7 +7,7 @@ export class CanvasTool extends React.Component {
         return (
             <div className="tool-button">
                 {this.props.toolName}
-                <span style={{ color: this.props.iconColor || 'black' }} class={this.props.iconClass}>{this.props.iconName}</span>
+                <span style={{ color: this.props.iconColor || 'black' }} className={this.props.iconClass}>{this.props.iconName}</span>
             </div>
         )
     }
