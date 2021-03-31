@@ -1,6 +1,6 @@
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import './App.css';
-import Gallery from './Artistree/Gallery';
+import Gallery from './Artistree/Gallery/Gallery';
 import Canvas from './Artistree/Canvas/Canvas';
 import MySubmissions from './Artistree/MySubmissions';
 import NavBar from './Artistree/NavBar';

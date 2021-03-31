@@ -1,0 +1,14 @@
+.MySubmissions-root {
+    height: calc(100% - 150px);
+}
+
+.MySubmissions-page-body {
+    background-color: #70480D;
+    height: calc(100% - 60px);
+    width: 100%;
+    padding: 50px;
+}
+
+.MySubmissions-logo{
+    background-image: url(./artistree_logo.png);
+}
