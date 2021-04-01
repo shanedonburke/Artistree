@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { Button
+} from 'reactstrap'
+
 import GalleryPost from './GalleryPost';
 
 import './Gallery.css';
@@ -25,6 +28,10 @@ class Gallery extends React.Component {
         return (
             <div className="gallery-root">
                 <div className="title-bar">
+                    <div className="filter-sort">
+                        <Button>Filter</Button>
+                        <Button>Sort</Button>
+                    </div>
                     <div>Gallery</div>
                 </div>
                 <div className="page-body">

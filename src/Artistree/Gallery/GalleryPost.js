@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import './GalleryPost.css';
 
 class GalleryPost extends React.Component {
@@ -11,7 +13,7 @@ class GalleryPost extends React.Component {
     render() {
         return (
             <div className="post">
-                <div className="image" />
+                <Link to="/leave-feedback"><div className="image" /></Link>
                 <div>
                     {this.props.children}
                 </div>
