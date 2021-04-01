@@ -29,10 +29,11 @@ class Gallery extends React.Component {
             <div className="gallery-root">
                 <div className="title-bar">
                     <div className="filter-sort">
-                        <Button>Filter</Button>
-                        <Button>Sort</Button>
+                        <Button><span class="material-icons filter-icon">filter_list</span>Filter</Button>
+                        <Button><span class="material-icons-outlined sort-icon">arrow_upward</span>Sort</Button>
                     </div>
                     <div>Gallery</div>
+                    <Button>+ New Submission</Button>
                 </div>
                 <div className="page-body">
                     {Array.from(this.state.grid).map((idx) => {
