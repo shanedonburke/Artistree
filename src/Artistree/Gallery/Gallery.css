@@ -2,6 +2,19 @@
     height: 100%;
 }
 
+.gallery-title-bar {
+    display: flex;
+}
+
+.title-bar-section-sm {
+    width: 20%;
+    height: 100%;
+}
+
+.title-bar-section-lg {
+    width: 60%;
+}
+
 .page-body {
     background-color: #70480D;
     height: 100%;
