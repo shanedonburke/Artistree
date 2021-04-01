@@ -25,7 +25,7 @@ class Canvas extends React.Component {
                 <div className="page-body">
                     <div className="canvas-with-tools">
                         <div className="canvas" onClick={() => this.setState({ showDrawing: true })}>
-                            { this.state.showDrawing ? <img src={drawing} className="canvas-drawing" /> : null }
+                            { this.state.showDrawing ? <img src={drawing} className="canvas-drawing" alt="Drawing" /> : null }
                         </div>
                         <div className="canvas-sidebar">
                             <div className="tools">
@@ -38,6 +38,7 @@ class Canvas extends React.Component {
                                 <CanvasTool toolName="Choose Color" iconName="palette" iconClass="material-icons" iconColor="red"></CanvasTool>
                                 <CanvasTool toolName="Layers" iconName="layers" iconClass="material-icons-outlined"></CanvasTool>
                                 <CanvasTool toolName="Text" iconName="title" iconClass="material-icons"></CanvasTool>
+                                <CanvasTool toolName="Eraser" useFontAwesome="true" iconName="eraser"></CanvasTool>
                             </div>
                             <div className="sidebar-btn-container">
                                 <button className="canvas-sidebar-btn post-to-canvas-btn">Post to Gallery</button>
