@@ -51,6 +51,7 @@
     border-radius: 10px;
     font-size: 18px;
     margin-bottom: 10px;
+    width: calc(100% - 40px);
 }
 
 .post-to-canvas-btn {
@@ -61,5 +62,4 @@
 .discard-btn {
     background-color: #EB1414;
     border: 4px solid #9C0606;
-    width: calc(100% - 40px);
 }
