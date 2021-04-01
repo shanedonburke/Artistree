@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { Button
+} from 'reactstrap'
+
 import GalleryPost from './GalleryPost';
 
 import './Gallery.css';
@@ -25,7 +28,12 @@ class Gallery extends React.Component {
         return (
             <div className="gallery-root">
                 <div className="title-bar">
+                    <div className="filter-sort">
+                        <Button><span class="material-icons filter-icon">filter_list</span>Filter</Button>
+                        <Button><span class="material-icons-outlined sort-icon">arrow_upward</span>Sort</Button>
+                    </div>
                     <div>Gallery</div>
+                    <Button>+ New Submission</Button>
                 </div>
                 <div className="page-body">
                     {Array.from(this.state.grid).map((idx) => {
