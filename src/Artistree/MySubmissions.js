@@ -1,5 +1,5 @@
 import React from 'react';
-import MSlogo from './artistree_logo.png'
+import MSlogo from './Memes/birdarms.png'
 
 import './MySubmissions.css'
 
