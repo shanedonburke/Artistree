@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import { Button
 } from 'reactstrap'
 
@@ -27,13 +29,15 @@ class Gallery extends React.Component {
     render() {
         return (
             <div className="gallery-root">
-                <div className="title-bar">
-                    <div className="filter-sort">
-                        <Button><span class="material-icons filter-icon">filter_list</span>Filter</Button>
-                        <Button><span class="material-icons-outlined sort-icon">arrow_upward</span>Sort</Button>
+                <div className="title-bar gallery-title-bar">
+                    <div className="filter-sort title-bar-section-sm">
+                        <Button><span class="material-icons title-bar-icon">filter_list</span>Filter</Button>
+                        <Button><span class="material-icons-outlined title-bar-icon">arrow_upward</span>Sort</Button>
                     </div>
-                    <div>Gallery</div>
-                    <Button>+ New Submission</Button>
+                    <div className="title-bar-section-lg">Gallery</div>
+                    <div className="title-bar-section-sm">
+                        <Link to="/canvas"><Button color="primary"><span class="material-icons-outlined title-bar-icon">add</span> New Submission</Button></Link>
+                    </div>
                 </div>
                 <div className="page-body">
                     {Array.from(this.state.grid).map((idx) => {

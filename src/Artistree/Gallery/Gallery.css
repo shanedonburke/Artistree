@@ -2,20 +2,25 @@
     height: 100%;
 }
 
+.gallery-title-bar {
+    display: flex;
+}
+
+.title-bar-section-sm {
+    width: 20%;
+    height: 100%;
+}
+
+.title-bar-section-lg {
+    width: 60%;
+}
+
 .page-body {
     background-color: #70480D;
     height: 100%;
     width: 100%;
 }
 
-.filter-sort {
-    
-}
-
-.filter-icon {
-    font-size: 10px;
-}
-
-.sort-icon {
-    font-size: 10px;
+.title-bar-icon {
+    font-size: 20px !important;
 }

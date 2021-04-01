@@ -13,7 +13,7 @@ class LeavingFeedback extends React.Component {
         return (
             <div className="LeavingFeedback-root">
                 <div className="title-bar">
-                    <div>My Submissions</div>
+                    <div>Critique</div>
                 </div>
                 <div className="LeavingFeedback-page-body">                 
                 <div style={{textAlign:'left'}}><img src={MonkeImage} width="600" height="600" alt="MonkeImage" /></div>   

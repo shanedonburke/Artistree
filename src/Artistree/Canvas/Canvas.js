@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import { CanvasTool } from './CanvasTool';
 import drawing from '../Memes/canvas_drawing.jpg';
 import './Canvas.css';
@@ -41,8 +43,8 @@ class Canvas extends React.Component {
                                 <CanvasTool toolName="Eraser" useFontAwesome="true" iconName="eraser"></CanvasTool>
                             </div>
                             <div className="sidebar-btn-container">
-                                <button className="canvas-sidebar-btn post-to-canvas-btn">Post to Gallery</button>
-                                <button className="canvas-sidebar-btn discard-btn">Discard</button>
+                                <Link to="/my-submissions"><button className="canvas-sidebar-btn post-to-canvas-btn">Post to Gallery</button></Link>
+                                <Link to="/"><button className="canvas-sidebar-btn discard-btn">Discard</button></Link>
                             </div>
                         </div>
                     </div>
