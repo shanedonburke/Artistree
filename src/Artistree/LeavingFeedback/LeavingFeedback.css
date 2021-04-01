@@ -1,0 +1,10 @@
+.LeavingFeedback-root {
+    height: calc(100% - 150px);
+}
+
+.LeavingFeedback-page-body {
+    background-color: #70480D;
+    height: calc(100% - 60px);
+    width: 100%;
+    padding: 50px;
+}

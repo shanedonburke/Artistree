@@ -35,6 +35,8 @@ class NavBar extends React.Component {
                     <Link to="/"><span className="navbar-link">Gallery</span></Link>
                     <Link to="/canvas"><span className="navbar-link">Canvas</span></Link>
                     <Link to="/my-submissions"><span className="navbar-link">My Submissions</span></Link>
+                    <Link to="/leave-feedback"><span className="navbar-link">Leave Feedback(RM later)</span></Link>
+
                 </div>
                 <div>
                     <Modal isOpen={this.state.loginModalOpen} toggle={() => this.setState({loginModalOpen: !this.state.loginModalOpen})}>
