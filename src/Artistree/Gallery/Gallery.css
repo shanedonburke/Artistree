@@ -21,10 +21,6 @@
     width: 100%;
 }
 
-.filter-icon {
-    font-size: 10px;
-}
-
-.sort-icon {
-    font-size: 10px;
+.title-bar-icon {
+    font-size: 20px !important;
 }
