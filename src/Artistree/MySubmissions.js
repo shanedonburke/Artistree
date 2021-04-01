@@ -15,7 +15,7 @@ class MySubmissions extends React.Component {
                 <div className="title-bar">
                     <div>My Submissions</div>
                 </div>
-                <div className="MySubmissions-page-body">                    
+                <div className="MySubmissions-page-body" style={{textAlign:'left'}}>                    
                     <img src={MSlogo} height="600" width="600" alt="logo"/>
                 </div>
 
