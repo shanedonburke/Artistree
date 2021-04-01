@@ -31,8 +31,8 @@ class Gallery extends React.Component {
             <div className="gallery-root">
                 <div className="title-bar gallery-title-bar">
                     <div className="filter-sort title-bar-section-sm">
-                        <Button><span class="material-icons title-bar-icon">filter_list</span>Filter</Button>
-                        <Button><span class="material-icons-outlined title-bar-icon">arrow_upward</span>Sort</Button>
+                        <Button><span className="material-icons title-bar-icon">filter_list</span>Filter</Button>
+                        <Button><span className="material-icons-outlined title-bar-icon">arrow_upward</span>Sort</Button>
                     </div>
                     <div className="title-bar-section-lg">Gallery</div>
                     <div className="title-bar-section-sm">
