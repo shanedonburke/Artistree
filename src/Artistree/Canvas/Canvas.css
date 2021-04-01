@@ -61,4 +61,5 @@
 .discard-btn {
     background-color: #EB1414;
     border: 4px solid #9C0606;
+    width: calc(100% - 40px);
 }

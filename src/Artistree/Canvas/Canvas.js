@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faEraser } from "@fortawesome/free-solid-svg-icons";
 
 import { CanvasTool } from './CanvasTool';
 import drawing from '../Memes/canvas_drawing.jpg';
@@ -12,6 +14,7 @@ class Canvas extends React.Component {
         this.state = {
             showDrawing: false
         };
+        library.add(faEraser);
     }
 
     drawImage() {
@@ -40,7 +43,7 @@ class Canvas extends React.Component {
                                 <CanvasTool toolName="Choose Color" iconName="palette" iconClass="material-icons" iconColor="red"></CanvasTool>
                                 <CanvasTool toolName="Layers" iconName="layers" iconClass="material-icons-outlined"></CanvasTool>
                                 <CanvasTool toolName="Text" iconName="title" iconClass="material-icons"></CanvasTool>
-                                <CanvasTool toolName="Eraser" useFontAwesome="true" iconName="eraser"></CanvasTool>
+                                <CanvasTool toolName="Eraser" useFontAwesome="true" icon={faEraser}></CanvasTool>
                             </div>
                             <div className="sidebar-btn-container">
                                 <button className="canvas-sidebar-btn post-to-canvas-btn">Post to Gallery</button>
