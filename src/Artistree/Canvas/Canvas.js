@@ -43,7 +43,7 @@ class Canvas extends React.Component {
                                 <CanvasTool toolName="Eraser" useFontAwesome="true" iconName="eraser"></CanvasTool>
                             </div>
                             <div className="sidebar-btn-container">
-                                <button className="canvas-sidebar-btn post-to-canvas-btn">Post to Gallery</button>
+                                <Link to="/my-submissions"><button className="canvas-sidebar-btn post-to-canvas-btn">Post to Gallery</button></Link>
                                 <Link to="/"><button className="canvas-sidebar-btn discard-btn">Discard</button></Link>
                             </div>
                         </div>
