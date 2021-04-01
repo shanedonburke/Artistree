@@ -16,7 +16,7 @@ class MySubmissions extends React.Component {
                     <div>My Submissions</div>
                 </div>
                 <div className="MySubmissions-page-body">                    
-                    <img src={MSlogo} className = "MySubmissions-logo" alt="logo"/>
+                    <img src={MSlogo} height="600" width="600" alt="logo"/>
                 </div>
 
             </div>
