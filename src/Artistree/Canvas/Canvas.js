@@ -1,12 +1,19 @@
 import React from 'react';
 
 import { CanvasTool } from './CanvasTool';
+import drawing from '../Memes/canvas_drawing.jpg';
 import './Canvas.css';
 
 class Canvas extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            showDrawing: false
+        };
+    }
+
+    drawImage() {
+
     }
 
     render() {
@@ -17,17 +24,25 @@ class Canvas extends React.Component {
                 </div>
                 <div className="page-body">
                     <div className="canvas-with-tools">
-                        <div className="canvas"></div>
-                        <div className="tools">
-                            <CanvasTool toolName="Brush" iconName="brush" iconClass="material-icons-outlined"></CanvasTool>
-                            <CanvasTool toolName="Pencil" iconName="create" iconClass="material-icons-outlined"></CanvasTool>
-                            <CanvasTool toolName="Fill" iconName="format_color_fill" iconClass="material-icons-outlined"></CanvasTool>
-                            <CanvasTool toolName="Line" iconName="arrow_right_alt" iconClass="material-icons"></CanvasTool>
-                            <CanvasTool toolName="Ellipse" iconName="circle" iconClass="material-icons-outlined"></CanvasTool>
-                            <CanvasTool toolName="Rectangle" iconName="crop_16_9" iconClass="material-icons-outlined"></CanvasTool>
-                            <CanvasTool toolName="Choose Color" iconName="palette" iconClass="material-icons" iconColor="red"></CanvasTool>
-                            <CanvasTool toolName="Layers" iconName="layers" iconClass="material-icons-outlined"></CanvasTool>
-                            <CanvasTool toolName="Text" iconName="title" iconClass="material-icons"></CanvasTool>
+                        <div className="canvas" onClick={() => this.setState({ showDrawing: true })}>
+                            { this.state.showDrawing ? <img src={drawing} className="canvas-drawing" /> : null }
+                        </div>
+                        <div className="canvas-sidebar">
+                            <div className="tools">
+                                <CanvasTool toolName="Brush" iconName="brush" iconClass="material-icons-outlined"></CanvasTool>
+                                <CanvasTool toolName="Pencil" iconName="create" iconClass="material-icons-outlined"></CanvasTool>
+                                <CanvasTool toolName="Fill" iconName="format_color_fill" iconClass="material-icons-outlined"></CanvasTool>
+                                <CanvasTool toolName="Line" iconName="arrow_right_alt" iconClass="material-icons"></CanvasTool>
+                                <CanvasTool toolName="Ellipse" iconName="circle" iconClass="material-icons-outlined"></CanvasTool>
+                                <CanvasTool toolName="Rectangle" iconName="crop_16_9" iconClass="material-icons-outlined"></CanvasTool>
+                                <CanvasTool toolName="Choose Color" iconName="palette" iconClass="material-icons" iconColor="red"></CanvasTool>
+                                <CanvasTool toolName="Layers" iconName="layers" iconClass="material-icons-outlined"></CanvasTool>
+                                <CanvasTool toolName="Text" iconName="title" iconClass="material-icons"></CanvasTool>
+                            </div>
+                            <div className="sidebar-btn-container">
+                                <button className="canvas-sidebar-btn post-to-canvas-btn">Post to Gallery</button>
+                                <button className="canvas-sidebar-btn discard-btn">Discard</button>
+                            </div>
                         </div>
                     </div>
                 </div>
