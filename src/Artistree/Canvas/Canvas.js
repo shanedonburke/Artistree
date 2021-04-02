@@ -31,6 +31,10 @@ class Canvas extends React.Component {
                     <div>Canvas</div>
                 </div>
                 <div className="page-body">
+                    <div className="zoom-controls">
+                        <span className="material-icons">zoom_in</span>
+                        <span className="material-icons">zoom_out</span>
+                    </div>
                     <div className="canvas-with-tools">
                         <div className="canvas" onClick={() => this.setState({ showDrawing: true })}>
                             { this.state.showDrawing ? <img src={drawing} className="canvas-drawing" alt="Drawing" /> : null }
