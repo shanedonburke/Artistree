@@ -53,7 +53,7 @@ class Gallery extends React.Component {
                         );
                     })} */}
                     {listOfImages.map(
-                      (image, index) => <GalleryPost key={index} image={image}>{index}</GalleryPost>
+                      (image, index) => <GalleryPost key={index} image={image.default}>{index}</GalleryPost>
                     )}
                 </div>
             </div>
