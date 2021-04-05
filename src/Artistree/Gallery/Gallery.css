@@ -9,6 +9,22 @@
 .title-bar-section-sm {
     width: 20%;
     height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.new-submission-container {
+    justify-content: flex-end;
+    padding: 13px;
+}
+
+.title-bar-section-sm a {
+    height: 34px;
+}
+
+.new-submission-btn {
+    margin-top: -34px;
+    height: 34px;
 }
 
 .title-bar-section-lg {
@@ -23,4 +39,13 @@
 
 .title-bar-icon {
     font-size: 20px !important;
+}
+
+.new-submission-text {
+    line-height: 1.1;
+}
+
+.new-submission-elements {
+    display: flex;
+    justify-content: space-between;
 }

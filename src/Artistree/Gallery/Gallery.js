@@ -42,8 +42,15 @@ class Gallery extends React.Component {
                         <Button><span className="material-icons-outlined title-bar-icon">arrow_upward</span>Sort</Button>
                     </div>
                     <div className="title-bar-section-lg">Gallery</div>
-                    <div className="title-bar-section-sm">
-                        <Link to="/canvas"><Button color="primary"><span class="material-icons-outlined title-bar-icon">add</span> New Submission</Button></Link>
+                    <div className="title-bar-section-sm new-submission-container">
+                        <Link to="/canvas">
+                            <Button color="primary" className="new-submission-btn">
+                                <div className="new-submission-elements">
+                                    <span className="material-icons-outlined title-bar-icon">add</span>
+                                    <span className="new-submission-text">New Submission</span>
+                                </div>
+                            </Button>
+                        </Link>
                     </div>
                 </div>
                 <div className="page-body">
