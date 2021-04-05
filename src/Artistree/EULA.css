@@ -1,0 +1,25 @@
+.EULA-root {
+    height: calc(100% - 150px);
+}
+
+.EULA-page-body {
+    background-color: #70480D;
+    height: calc(100% - 60px);
+    width: 100%;
+    padding: 50px;
+}
+
+.EULA-logo > image{
+    background-image: url(./Gallery/Memes/birdarms.png);
+    display: block;
+    margin: 0 auto;
+    resize: 'contain';
+}
+
+.EULA-scrollabletextbox {
+    height:100px;
+    width:200px;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 82%;
+    overflow:scroll;
+}
