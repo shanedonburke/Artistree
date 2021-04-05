@@ -5,6 +5,7 @@ import Canvas from './Artistree/Canvas/Canvas';
 import MySubmissions from './Artistree/MySubmissions';
 import LeavingFeedback from './Artistree/LeavingFeedback/LeavingFeedback';
 import NavBar from './Artistree/NavBar';
+import Eula from './Artistree/EULA';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
             </Route>
           <Route exact path="/leave-feedback">
             <LeavingFeedback />
+          </Route>
+          <Route exact path ="/eula">
+            <Eula />
           </Route>
         </Switch>
       </Router>
