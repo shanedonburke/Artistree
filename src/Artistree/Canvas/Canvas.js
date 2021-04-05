@@ -5,7 +5,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faEraser, faFillDrip } from "@fortawesome/free-solid-svg-icons";
 
 import { CanvasTool } from './CanvasTool';
-import drawing from '../Memes/canvas_drawing.jpg';
+import drawing from '../Gallery/Memes/canvas_drawing.jpg';
 import './Canvas.css';
 
 class Canvas extends React.Component {

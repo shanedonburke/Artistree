@@ -1,5 +1,5 @@
 import React from 'react';
-import MonkeImage from '../Memes/monke.jpg'
+import MonkeImage from '../Gallery/Memes/monke.jpg'
 
 import './LeavingFeedback.css'
 

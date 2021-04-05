@@ -9,6 +9,7 @@ import GalleryPost from './GalleryPost';
 
 import './Gallery.css';
 
+var listOfImages =[];
 class Gallery extends React.Component {
     constructor(props) {
         super(props);
@@ -21,7 +22,13 @@ class Gallery extends React.Component {
         return grid;
     }
 
+    importAll(r) {
+        return r.keys().map(r);
+    }
+
     componentDidMount () {
+        listOfImages = this.importAll(require.context('./Memes/', false, /\.(png|jpe?g|svg)$/));
+
         const grid = this.buildGrid(12);
         this.setState({grid: grid});
     }
@@ -40,11 +47,14 @@ class Gallery extends React.Component {
                     </div>
                 </div>
                 <div className="page-body">
-                    {Array.from(this.state.grid).map((idx) => {
+                    {/* {Array.from(this.state.grid).map((idx) => {
                         return (
                             <GalleryPost key={idx}>{idx}</GalleryPost>
                         );
-                    })}
+                    })} */}
+                    {listOfImages.map(
+                      (image, index) => <GalleryPost key={index} image={image}>{index}</GalleryPost>
+                    )}
                 </div>
             </div>
         );

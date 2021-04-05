@@ -13,7 +13,7 @@ class GalleryPost extends React.Component {
     render() {
         return (
             <div className="post">
-                <Link to="/leave-feedback"><div className="image" /></Link>
+                <Link to="/leave-feedback"><img className="image" src={this.props.image} alt="Galley Post" /></Link>
                 <div>
                     {this.props.children}
                 </div>
