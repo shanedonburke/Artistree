@@ -1,6 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { TextField, Divider, Avatar, Grid, Paper } from "@material-ui/core";
+import {
+  TextField,
+  Divider,
+  Avatar,
+  Grid,
+  Paper,
+  Modal,
+} from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
 
 import "./LeavingFeedback.css";
 import { Button } from "reactstrap";
@@ -10,11 +19,33 @@ const imgLink2 =
   "https://preview.redd.it/cfd0qlpofcb01.jpg?auto=webp&s=b2b0b996ec334bcddc3088037130e9dba186ded0";
 const imgLink3 = "https://i.redd.it/kc9sfn0jgnwz.jpg";
 
+const useStyles = makeStyles((theme) => ({
+    paper: {
+      position: 'absolute',
+      width: 400,
+      backgroundColor: theme.palette.background.paper,
+      border: '2px solid #000',
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(2, 4, 3),
+    },
+  }));
+  
+
 export default function LeavingFeedback() {
   const { state } = useLocation();
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const classes = useStyles();
 
   return (
     <div className="LeavingFeedback-root">
+      <button onClick={() => setModalIsOpen(!modalIsOpen)}>Report</button>
+      <Modal open={modalIsOpen}>
+        <div className={classes.paper}>
+          <h2>Reason for Reporting</h2>
+          <p>Illegal</p>
+        </div>
+      </Modal>
+
       <div className="title-bar">
         <div>Critique</div>
       </div>
@@ -61,7 +92,13 @@ export default function LeavingFeedback() {
                   Guidelines!
                 </h4>
 
-                <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    height: "100%",
+                  }}
+                >
                   <div style={{ margin: "20px 0" }}>
                     <TextField
                       id="standard-basic"
