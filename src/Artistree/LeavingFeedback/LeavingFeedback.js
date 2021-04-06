@@ -9,7 +9,7 @@ import {
   Paper,
   Modal,
 } from "@material-ui/core";
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 
 import "./LeavingFeedback.css";
 import { Button } from "reactstrap";
@@ -20,16 +20,17 @@ const imgLink2 =
 const imgLink3 = "https://i.redd.it/kc9sfn0jgnwz.jpg";
 
 const useStyles = makeStyles((theme) => ({
-    paper: {
-      position: 'absolute',
-      width: 400,
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
-    },
-  }));
-  
+  paper: {
+    position: "absolute",
+    width: 400,
+    backgroundColor: theme.palette.background.paper,
+    border: "2px solid #000",
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+    top: "50%",
+    left: "50%",
+  },
+}));
 
 export default function LeavingFeedback() {
   const { state } = useLocation();
@@ -38,7 +39,6 @@ export default function LeavingFeedback() {
 
   return (
     <div className="LeavingFeedback-root">
-      <button onClick={() => setModalIsOpen(!modalIsOpen)}>Report</button>
       <Modal open={modalIsOpen}>
         <div className={classes.paper}>
           <h2>Reason for Reporting</h2>
@@ -61,23 +61,37 @@ export default function LeavingFeedback() {
               flexWrap: "nowrap",
             }}
           >
-            <Paper
+            <div
               style={{
-                width: "auto",
-                height: "auto",
-                textAlign: "left",
-                marginRight: "200px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
               }}
             >
-              <img
-                src={state.image}
-                alt="dynamo"
+              <Paper
                 style={{
-                  width: "600px",
-                  height: "100%",
+                  width: "auto",
+                  height: "570px",
+                  textAlign: "left",
+                  marginRight: "200px",
                 }}
-              />
-            </Paper>
+              >
+                <img
+                  src={state.image}
+                  alt="dynamo"
+                  style={{
+                    width: "570px",
+                    height: "100%",
+                  }}
+                />
+              </Paper>
+              <Button
+                style={{ width: "100px", backgroundColor: "red" }}
+                onClick={() => setModalIsOpen(!modalIsOpen)}
+              >
+                Report
+              </Button>
+            </div>
 
             <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>
               <Paper
