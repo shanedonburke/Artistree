@@ -2,11 +2,23 @@
     height: calc(100% - 150px);
 }
 
+.zoom-controls {
+    height: 30px;
+    width: min-content;
+    background-color: #CFCFCF;
+    display: flex;
+    justify-content: left;
+}
+
+.zoom-controls > .material-icons {
+    font-size: 32px;
+}
+
 .page-body {
     background-color: #70480D;
     height: calc(100% - 60px);
     width: 100%;
-    padding: 50px;
+    padding: 20px 50px 50px 50px;
 }
 
 .canvas-with-tools {
@@ -16,8 +28,8 @@
 }
 
 .canvas {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     background-color: white;
 }
 

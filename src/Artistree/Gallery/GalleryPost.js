@@ -13,7 +13,10 @@ class GalleryPost extends React.Component {
     render() {
         return (
             <div className="post">
-                <Link to="/leave-feedback"><div className="image" /></Link>
+                <Link to={{
+                    pathname: "/leave-feedback",
+                    state: { image: this.props.image }
+                }}><img className="image" src={this.props.image} alt="Galley Post" /></Link>
                 <div>
                     {this.props.children}
                 </div>

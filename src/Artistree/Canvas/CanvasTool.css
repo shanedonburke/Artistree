@@ -10,6 +10,8 @@
     margin: 5px;
     padding: 10px;
     font-size: 14px;
+    user-select: none;
+    cursor: pointer;
 }
 .material-icons, .material-icons-outlined {
     font-size: 36px;
