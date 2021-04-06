@@ -7,7 +7,6 @@ import LeavingFeedback from './Artistree/LeavingFeedback/LeavingFeedback';
 import NavBar from './Artistree/NavBar';
 import Modal from 'react-modal';
 import { useState } from 'react';
-import Eula from './Artistree/EULA';
 
 function App() {
   const [modalIsOpen, setModalIsOPen] = useState(false)
@@ -36,9 +35,6 @@ function App() {
             </Route>
           <Route exact path="/leave-feedback">
             <LeavingFeedback />
-          </Route>
-          <Route exact path ="/eula">
-            <Eula />
           </Route>
         </Switch>
       </Router>
