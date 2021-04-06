@@ -1,26 +1,21 @@
 import React from 'react';
-import MonkeImage from '../Gallery/Memes/monke.jpg'
+import MonkeImage from '../Gallery/Memes/monke.jpg';
+import { useLocation } from 'react-router-dom';
 
 import './LeavingFeedback.css'
 
-class LeavingFeedback extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
+export default function LeavingFeedback() {
+    const { state } = useLocation();
 
-    render() {
-        return (
-            <div className="LeavingFeedback-root">
-                <div className="title-bar">
-                    <div>Critique</div>
-                </div>
-                <div className="LeavingFeedback-page-body">                 
-                <div style={{textAlign:'left'}}><img src={MonkeImage} width="600" height="600" alt="MonkeImage" /></div>   
-                </div>
-
+    return (
+        <div className="LeavingFeedback-root">
+            <div className="title-bar">
+                <div>Critique</div>
             </div>
-        );
-    }
+            <div className="LeavingFeedback-page-body">                 
+            <div style={{textAlign:'left'}}><img src={state.image} width="600" height="600" alt="MonkeImage" /></div>   
+            </div>
+
+        </div>
+    );
 }
-export default LeavingFeedback;
