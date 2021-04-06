@@ -19,9 +19,7 @@ function App() {
           Reason for Reporting
         </h2>
         <p>
-          1.
-          2.
-          3.
+          Illegal
         </p>
       </Modal>
       <Router>
