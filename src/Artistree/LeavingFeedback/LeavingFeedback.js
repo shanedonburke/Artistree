@@ -1,5 +1,4 @@
 import React from 'react';
-import MonkeImage from '../Gallery/Memes/monke.jpg';
 import { useLocation } from 'react-router-dom';
 
 import './LeavingFeedback.css'
