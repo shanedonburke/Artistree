@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Button
-} from 'reactstrap'
+} from 'reactstrap';
 
 import GalleryPost from './GalleryPost';
 
