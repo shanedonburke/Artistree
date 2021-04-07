@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
 export default function LeavingFeedback() {
   const { state } = useLocation();
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [liked, setLiked] = useState(false);
   const classes = useStyles();
 
   return (
@@ -66,6 +67,7 @@ export default function LeavingFeedback() {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
+                marginRight: "200px",
               }}
             >
               <Paper
@@ -73,7 +75,6 @@ export default function LeavingFeedback() {
                   width: "auto",
                   height: "570px",
                   textAlign: "left",
-                  marginRight: "200px",
                 }}
               >
                 <img
@@ -85,12 +86,17 @@ export default function LeavingFeedback() {
                   }}
                 />
               </Paper>
-              <Button
-                style={{ width: "100px", backgroundColor: "red" }}
-                onClick={() => setModalIsOpen(!modalIsOpen)}
-              >
-                Report
-              </Button>
+              <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <Button className="heart-button" onClick={() => setLiked(!liked)}>
+                  <span className="material-icons heart-icon">{liked ? "favorite" : "favorite_border"}</span>
+                </Button>
+                <Button
+                  style={{ width: "100px", backgroundColor: "red" }}
+                  onClick={() => setModalIsOpen(!modalIsOpen)}
+                >
+                  Report
+                </Button>
+              </div>
             </div>
 
             <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>

@@ -8,3 +8,14 @@
     width: 100%;
     padding: 50px;
 }
+
+.heart-button {
+    background-color: #068e03 !important;
+    width: 36px;
+    height: 36px;
+    padding: 6px !important;
+}
+
+.heart-icon {
+    font-size: 24px;
+}
