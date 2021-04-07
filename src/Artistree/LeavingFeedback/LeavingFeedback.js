@@ -135,7 +135,7 @@ export default function LeavingFeedback() {
                       container
                       wrap="unwrap"
                       spacing={2}
-                      style={{ textAlign: "right" }}
+                      style={{ textAlign: "right", height: "110px" }}
                     >
                       <Grid item>
                         <Avatar
@@ -167,7 +167,7 @@ export default function LeavingFeedback() {
                       container
                       wrap="unwrap"
                       spacing={2}
-                      style={{ textALign: "right" }}
+                      style={{ textAlign: "right", height: "110px" }}
                     >
                       <Grid item>
                         <Avatar
@@ -199,7 +199,7 @@ export default function LeavingFeedback() {
                       container
                       wrap="unwrap"
                       spacing={2}
-                      style={{ textALign: "right" }}
+                      style={{ textAlign: "right", height: "110px" }}
                     >
                       <Grid item>
                         <Avatar
