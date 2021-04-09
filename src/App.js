@@ -2,10 +2,10 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.css";
 import Gallery from "./Artistree/Gallery/Gallery";
 import Canvas from "./Artistree/Canvas/Canvas";
-import MySubmissions from "./Artistree/MySubmissions";
 import LeavingFeedback from "./Artistree/LeavingFeedback/LeavingFeedback";
 import NavBar from "./Artistree/NavBar";
 import Eula from "./Artistree/EULA";
+import ViewingFeedback from "./Artistree/ViewingFeedback/ViewingFeedback";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
             <Canvas />
           </Route>
           <Route exact path="/my-submissions">
-            <MySubmissions />
+            <ViewingFeedback />
           </Route>
           <Route exact path="/leave-feedback">
             <LeavingFeedback />

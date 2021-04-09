@@ -87,8 +87,13 @@ export default function LeavingFeedback() {
                 />
               </Paper>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <Button className="heart-button" onClick={() => setLiked(!liked)}>
-                  <span className="material-icons heart-icon">{liked ? "favorite" : "favorite_border"}</span>
+                <Button
+                  className="heart-button"
+                  onClick={() => setLiked(!liked)}
+                >
+                  <span className="material-icons heart-icon">
+                    {liked ? "favorite" : "favorite_border"}
+                  </span>
                 </Button>
                 <Button
                   style={{ width: "100px", backgroundColor: "red" }}
@@ -139,7 +144,7 @@ export default function LeavingFeedback() {
                   <div style={{ overflowY: "auto", height: "100%" }}>
                     <Grid
                       container
-                      wrap="unwrap"
+                      wrap="nowrap"
                       spacing={2}
                       style={{ textAlign: "right", height: "110px" }}
                     >
@@ -151,7 +156,7 @@ export default function LeavingFeedback() {
                         />
                       </Grid>
 
-                      <Grid justifyContent="left" item xs zeroMinWidth>
+                      <Grid item xs zeroMinWidth>
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >
@@ -171,7 +176,7 @@ export default function LeavingFeedback() {
 
                     <Grid
                       container
-                      wrap="unwrap"
+                      wrap="nowrap"
                       spacing={2}
                       style={{ textAlign: "right", height: "110px" }}
                     >
@@ -183,7 +188,7 @@ export default function LeavingFeedback() {
                         />
                       </Grid>
 
-                      <Grid justifyContent="left" item xs zeroMinWidth>
+                      <Grid item xs zeroMinWidth>
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >
@@ -203,7 +208,7 @@ export default function LeavingFeedback() {
 
                     <Grid
                       container
-                      wrap="unwrap"
+                      wrap="nowrap"
                       spacing={2}
                       style={{ textAlign: "right", height: "110px" }}
                     >
@@ -215,7 +220,7 @@ export default function LeavingFeedback() {
                         />
                       </Grid>
 
-                      <Grid justifyContent="left" item xs zeroMinWidth>
+                      <Grid item xs zeroMinWidth>
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >

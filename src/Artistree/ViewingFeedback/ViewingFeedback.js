@@ -1,17 +1,14 @@
 import React from "react";
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
 import {
   TextField,
   Divider,
   Avatar,
   Grid,
   Paper,
-  Modal,
 } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
 
 import "./ViewingFeedback.css";
+import MSlogo from '../Gallery/Memes/birdarms.png'
 import { Button } from "reactstrap";
 const imgLink =
   "https://cf-images.us-east-1.prod.boltdns.net/v1/static/854081161001/e7c0a8f2-4b0b-40e7-858f-47de21dc8dcb/794143eb-4285-434e-8a08-820dab64c65b/1280x720/match/image.jpg";
@@ -19,34 +16,9 @@ const imgLink2 =
   "https://preview.redd.it/cfd0qlpofcb01.jpg?auto=webp&s=b2b0b996ec334bcddc3088037130e9dba186ded0";
 const imgLink3 = "https://i.redd.it/kc9sfn0jgnwz.jpg";
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    position: "absolute",
-    width: 400,
-    backgroundColor: theme.palette.background.paper,
-    border: "2px solid #000",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-    top: "50%",
-    left: "50%",
-  },
-}));
-
 export default function ViewingFeedback() {
-  const { state } = useLocation();
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [liked, setLiked] = useState(false);
-  const classes = useStyles();
-
   return (
     <div className="ViewingFeedback-root">
-      <Modal open={modalIsOpen}>
-        <div className={classes.paper}>
-          <h2>Reason for Reporting</h2>
-          <p>Illegal</p>
-        </div>
-      </Modal>
-
       <div className="title-bar">
         <div>Critique</div>
       </div>
@@ -73,12 +45,12 @@ export default function ViewingFeedback() {
               <Paper
                 style={{
                   width: "auto",
-                  height: "570px",
+                  height: "100%",
                   textAlign: "left",
                 }}
               >
                 <img
-                  src={state.image}
+                  src={MSlogo}
                   alt="dynamo"
                   style={{
                     width: "570px",
@@ -86,17 +58,6 @@ export default function ViewingFeedback() {
                   }}
                 />
               </Paper>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <Button className="heart-button" onClick={() => setLiked(!liked)}>
-                  <span className="material-icons heart-icon">{liked ? "favorite" : "favorite_border"}</span>
-                </Button>
-                <Button
-                  style={{ width: "100px", backgroundColor: "red" }}
-                  onClick={() => setModalIsOpen(!modalIsOpen)}
-                >
-                  Report
-                </Button>
-              </div>
             </div>
 
             <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>
@@ -151,7 +112,7 @@ export default function ViewingFeedback() {
                         />
                       </Grid>
 
-                      <Grid justifyContent="left" item xs zeroMinWidth>
+                      <Grid item xs zeroMinWidth>
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >
@@ -183,7 +144,7 @@ export default function ViewingFeedback() {
                         />
                       </Grid>
 
-                      <Grid justifyContent="left" item xs zeroMinWidth>
+                      <Grid item xs zeroMinWidth>
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >
@@ -215,7 +176,7 @@ export default function ViewingFeedback() {
                         />
                       </Grid>
 
-                      <Grid justifyContent="left" item xs zeroMinWidth>
+                      <Grid item xs zeroMinWidth>
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >
