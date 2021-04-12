@@ -35,8 +35,8 @@ const useStyles = makeStyles((theme) => ({
 export default function LeavingFeedback() {
   const { state } = useLocation();
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const handleClose = () => setShow (false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => setModalIsOpen (false);
+  const handleShow = () => setModalIsOPen(true);
   const [liked, setLiked] = useState(false);
   const classes = useStyles();
 
