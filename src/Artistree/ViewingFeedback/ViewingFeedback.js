@@ -79,7 +79,6 @@ export default function ViewingFeedback() {
                   <div style={{ overflowY: "auto", height: "100%", overflowX: "hidden" }}>
                     <Grid
                       container
-                      wrap="unwrap"
                       spacing={2}
                       style={{ textAlign: "right", height: "110px" }}
                     >
@@ -111,7 +110,6 @@ export default function ViewingFeedback() {
 
                     <Grid
                       container
-                      wrap="unwrap"
                       spacing={2}
                       style={{ textAlign: "right", height: "110px" }}
                     >
