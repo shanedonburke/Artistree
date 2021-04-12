@@ -35,19 +35,34 @@ const useStyles = makeStyles((theme) => ({
 export default function LeavingFeedback() {
   const { state } = useLocation();
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const handleClose = () => setShow (false);
+  const handleShow = () => setShow(true);
   const [liked, setLiked] = useState(false);
   const classes = useStyles();
 
   return (
     <div className="LeavingFeedback-root">
-      <Modal open={modalIsOpen}>
-        <div className={classes.paper}>
-          <h2>Reason for Reporting</h2>
-          <p>Illegal</p>
-        </div>
+       <Button variant="primary" onClick={handleShow}>
+                  style={{ width: "100px", backgroundColor: "red" }}
+                Report
+                </Button>
+
+      <Modal open={modalIsOpen} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>  Reason for reporting</Modal.Title>
+        </Modal.Header>
+        <Modal.Body> Illegal </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Submit
+          </Button>
+        </Modal.Footer>
       </Modal>
 
-      <div className="title-bar">
+    <div className="title-bar">
         <div>Critique</div>
       </div>
 
@@ -95,15 +110,9 @@ export default function LeavingFeedback() {
                     {liked ? "favorite" : "favorite_border"}
                   </span>
                 </Button>
-                <Button
-                  style={{ width: "100px", backgroundColor: "red" }}
-                  onClick={() => setModalIsOpen(!modalIsOpen)}
-                >
-                  Report
-                </Button>
+               
               </div>
             </div>
-
             <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>
               <Paper
                 style={{
