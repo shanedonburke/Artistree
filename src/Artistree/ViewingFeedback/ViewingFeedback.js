@@ -66,13 +66,9 @@ export default function ViewingFeedback() {
                   padding: "10px 20px",
                   width: "100%",
                   height: "100%",
+                  paddingTop: "20px"
                 }}
               >
-                <h4>
-                  Critique this artwork. Be sure to follow the Critiquing
-                  Guidelines!
-                </h4>
-
                 <div
                   style={{
                     display: "flex",
@@ -80,24 +76,7 @@ export default function ViewingFeedback() {
                     height: "100%",
                   }}
                 >
-                  <div style={{ margin: "20px 0" }}>
-                    <TextField
-                      id="standard-basic"
-                      label="Leave a Critique"
-                      multiline
-                      rows={4}
-                      variant="outlined"
-                      fullWidth
-                    />
-                    <Button
-                      color="primary"
-                      style={{ marginTop: "10px", float: "right" }}
-                    >
-                      Submit
-                    </Button>
-                  </div>
-
-                  <div style={{ overflowY: "auto", height: "100%" }}>
+                  <div style={{ overflowY: "auto", height: "100%", overflowX: "hidden" }}>
                     <Grid
                       container
                       wrap="unwrap"
