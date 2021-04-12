@@ -8,6 +8,9 @@ import {
   Grid,
   Paper,
   Modal,
+  RadioGroup,
+  FormControlLabel,
+  Radio,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -22,13 +25,15 @@ const imgLink3 = "https://i.redd.it/kc9sfn0jgnwz.jpg";
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
-    width: 400,
-    backgroundColor: theme.palette.background.paper,
+    width: "1000px",
+    height: "600px",
+    backgroundColor: "#f7e9d6",
     border: "2px solid #000",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
-    top: "50%",
-    left: "50%",
+    top: "calc(50% - 300px)",
+    left: "calc(50% - 500px)",
+    borderRadius: "10px",
   },
 }));
 
@@ -42,8 +47,81 @@ export default function LeavingFeedback() {
     <div className="LeavingFeedback-root">
       <Modal open={modalIsOpen}>
         <div className={classes.paper}>
-          <h2>Reason for Reporting</h2>
-          <p>Illegal</p>
+          <div
+            style={{
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+          >
+            <div style={{ display: "flex" }}>
+              <div className="report-col">
+                <h4>Reason for reporting:</h4>
+                <RadioGroup>
+                  <FormControlLabel
+                    value="nudity"
+                    control={<Radio />}
+                    label="Nudity"
+                  />
+                  <FormControlLabel
+                    value="unoriginal"
+                    control={<Radio />}
+                    label="Unoriginal"
+                  />
+                  <FormControlLabel
+                    value="offensive"
+                    control={<Radio />}
+                    label="Offensive/Derogatory"
+                  />
+                  <FormControlLabel
+                    value="spam"
+                    control={<Radio />}
+                    label="Spam"
+                  />
+                  <FormControlLabel
+                    value="illegal"
+                    control={<Radio />}
+                    label="Illegal content"
+                  />
+                  <div style={{ display: "flex" }}>
+                    <FormControlLabel
+                      value="other"
+                      control={<Radio />}
+                      label="Other:"
+                    />
+                    <TextField variant="outlined" size="small" placeholder="Reason"></TextField>
+                  </div>
+                </RadioGroup>
+              </div>
+              <div className="report-col">
+                <h4 style={{ marginBottom: "20px" }}>
+                  Explain your reasoning:
+                </h4>
+                <TextField multiline rows={20} variant="outlined" style={{width: "100%"}} placeholder="Write a few sentences explaining why you are reporting this submission" />
+              </div>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+              }}
+            >
+              <Button
+                style={{ width: "100px", backgroundColor: "#969696" }}
+                onClick={() => setModalIsOpen(false)}
+              >
+                Cancel
+              </Button>
+              <Button
+                style={{ width: "100px", backgroundColor: "red" }}
+                onClick={() => setModalIsOpen(false)}
+              >
+                Report
+              </Button>
+            </div>
+          </div>
         </div>
       </Modal>
 

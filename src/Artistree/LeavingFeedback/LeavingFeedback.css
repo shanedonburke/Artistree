@@ -19,3 +19,12 @@
 .heart-icon {
     font-size: 24px;
 }
+
+.report-col {
+    height: 100%;
+    width: 50%;
+}
+
+.MuiInputBase-formControl {
+    background-color: white;
+}
