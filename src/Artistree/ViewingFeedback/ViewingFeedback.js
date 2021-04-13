@@ -13,8 +13,8 @@ import { Button } from "reactstrap";
 const imgLink =
   "https://cf-images.us-east-1.prod.boltdns.net/v1/static/854081161001/e7c0a8f2-4b0b-40e7-858f-47de21dc8dcb/794143eb-4285-434e-8a08-820dab64c65b/1280x720/match/image.jpg";
 const imgLink2 =
-  "https://preview.redd.it/cfd0qlpofcb01.jpg?auto=webp&s=b2b0b996ec334bcddc3088037130e9dba186ded0";
-const imgLink3 = "https://i.redd.it/kc9sfn0jgnwz.jpg";
+  "http://cdn.facilityexecutive.com/wp-content/uploads/bird-x-qb4-strobe.jpg";
+const imgLink3 = "https://upload.wikimedia.org/wikipedia/commons/f/fb/Maye_Musk_in_2015.jpg";
 
 export default function ViewingFeedback() {
   return (
@@ -125,7 +125,7 @@ export default function ViewingFeedback() {
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >
-                          He Buddy Man
+                          BIRDBLASTER
                         </h4>
                         <p style={{ textAlign: "left" }}>
                           I support your artwork. Consider adding your signature
@@ -157,7 +157,7 @@ export default function ViewingFeedback() {
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >
-                          He Buddy Man
+                          SheBuddyWoman
                         </h4>
                         <p style={{ textAlign: "left" }}>
                           I believe if you added some lens flare this would be
