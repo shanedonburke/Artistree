@@ -59,6 +59,11 @@ We have access to an account page there is no link to an account page. We have a
 
 We have a EULA/Rules section that currently does not have anything in it but we intend to have a proper EULA.
 
+## Bugs
+
+1. Currently we have an issue that when refreshing will cause the website to 404. We are not sure what the problem is but the core functionality of the website works fine as long as the user does not refresh. -- TO BE FIXED
+2. Another bug we have is that the EULA page does not get linked appropriately resulting in a 404. This worked while hosting it on our machines but hosting it on github pages results in the link throwing a 404.
+
 ## Available Scripts
 
 In the project directory, you can run:
