@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Artistree/static/css/main.09697b20.chunk.css",
+    "main.js": "/Artistree/static/js/main.742e7577.chunk.js",
+    "main.js.map": "/Artistree/static/js/main.742e7577.chunk.js.map",
+    "runtime-main.js": "/Artistree/static/js/runtime-main.2ce6bfc9.js",
+    "runtime-main.js.map": "/Artistree/static/js/runtime-main.2ce6bfc9.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/Artistree/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.2fb389ae.chunk.js": "/Artistree/static/js/2.2fb389ae.chunk.js",
+    "static/js/2.2fb389ae.chunk.js.map": "/Artistree/static/js/2.2fb389ae.chunk.js.map",
+    "static/js/3.c5d6d32b.chunk.js": "/Artistree/static/js/3.c5d6d32b.chunk.js",
+    "static/js/3.c5d6d32b.chunk.js.map": "/Artistree/static/js/3.c5d6d32b.chunk.js.map",
+    "index.html": "/Artistree/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/Artistree/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.09697b20.chunk.css.map": "/Artistree/static/css/main.09697b20.chunk.css.map",
+    "static/js/2.2fb389ae.chunk.js.LICENSE.txt": "/Artistree/static/js/2.2fb389ae.chunk.js.LICENSE.txt",
+    "static/media/ArmBird.jpg": "/Artistree/static/media/ArmBird.2ef0e194.jpg",
+    "static/media/Goose.jpg": "/Artistree/static/media/Goose.c9b2d905.jpg",
+    "static/media/amogus.jpg": "/Artistree/static/media/amogus.c1a423e2.jpg",
+    "static/media/artistree_logo.9a4023e1.png": "/Artistree/static/media/artistree_logo.9a4023e1.png",
+    "static/media/avocado.jpg": "/Artistree/static/media/avocado.b752fb16.jpg",
+    "static/media/EULA.css": "/Artistree/static/media/birdarms.478c1e42.png",
+    "static/media/birdgun.png": "/Artistree/static/media/birdgun.ebf97901.png",
+    "static/media/canvas_drawing.jpg": "/Artistree/static/media/canvas_drawing.6f09f3dc.jpg",
+    "static/media/farq.jpeg": "/Artistree/static/media/farq.b1b7bf3b.jpeg",
+    "static/media/guac.png": "/Artistree/static/media/guac.1abce230.png",
+    "static/media/monke.jpg": "/Artistree/static/media/monke.1b1e4907.jpg",
+    "static/media/tpose.png": "/Artistree/static/media/tpose.41094b30.png",
+    "static/media/willie.jpg": "/Artistree/static/media/willie.7510fc77.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ce6bfc9.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.2fb389ae.chunk.js",
+    "static/css/main.09697b20.chunk.css",
+    "static/js/main.742e7577.chunk.js"
+  ]
+}
