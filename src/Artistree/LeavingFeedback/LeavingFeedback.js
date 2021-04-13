@@ -368,7 +368,7 @@ export default function LeavingFeedback() {
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >
-                          SlamHammy
+                          SHLOPJALOPPY
                         </h4>
                         <p style={{ textAlign: "left" }}>
                           I'm not particularly a fan of this... However, the shading is great. +1
