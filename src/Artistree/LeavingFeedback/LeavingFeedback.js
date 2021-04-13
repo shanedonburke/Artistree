@@ -21,6 +21,8 @@ const imgLink =
 const imgLink2 =
   "https://preview.redd.it/cfd0qlpofcb01.jpg?auto=webp&s=b2b0b996ec334bcddc3088037130e9dba186ded0";
 const imgLink3 = "https://i.redd.it/kc9sfn0jgnwz.jpg";
+const imgLink4 = "https://cyberpunk2077.wiki.fextralife.com/file/Cyberpunk-2077/johnny-silverhand-npc-cyberpunk-2077-wiki-guide.png";
+const imgLink5 = "https://i.redd.it/whgfzo54b62z.jpg"
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -191,8 +193,8 @@ export default function LeavingFeedback() {
                 }}
               >
                 <h4>
-                  Critique this artwork. Be sure to follow the Critiquing
-                  Guidelines!
+                  Critique this artwork. Be sure to follow the Critiquing 
+                  <a href="http://localhost:3000/eula"> Guidelines</a>!
                 </h4>
 
                 <div
@@ -270,7 +272,7 @@ export default function LeavingFeedback() {
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >
-                          He Buddy Man
+                          R1TCH13R0CKS
                         </h4>
                         <p style={{ textAlign: "left" }}>
                           I support your artwork. Consider adding your signature
@@ -302,7 +304,7 @@ export default function LeavingFeedback() {
                         <h4
                           style={{ margin: 0, textAlign: "left", color: "red" }}
                         >
-                          He Buddy Man
+                          BirdsArentReal42
                         </h4>
                         <p style={{ textAlign: "left" }}>
                           I believe if you added some lens flare this would be
@@ -313,6 +315,71 @@ export default function LeavingFeedback() {
                         </p>
                       </Grid>
                     </Grid>
+
+                    <GridDivider />
+
+                    <Grid
+                      container
+                      wrap="nowrap"
+                      spacing={2}
+                      style={{ textAlign: "right", height: "110px" }}
+                    >
+                      <Grid item>
+                        <Avatar
+                          alt="ELON"
+                          src={imgLink4}
+                          style={{ width: "50px", height: "50px" }}
+                        />
+                      </Grid>
+
+                      <Grid item xs zeroMinWidth>
+                        <h4
+                          style={{ margin: 0, textAlign: "left", color: "red" }}
+                        >
+                          SlamHammy
+                        </h4>
+                        <p style={{ textAlign: "left" }}>
+                          THIS IMAGE SLAPS!!!!!
+                          {" "}
+                        </p>
+                        <p style={{ textAlign: "left", color: "gray" }}>
+                          posted 12 days ago
+                        </p>
+                      </Grid>
+                    </Grid>
+
+                    <GridDivider />
+
+                    <Grid
+                      container
+                      wrap="nowrap"
+                      spacing={2}
+                      style={{ textAlign: "right", height: "110px" }}
+                    >
+                      <Grid item>
+                        <Avatar
+                          alt="ELON"
+                          src={imgLink5}
+                          style={{ width: "50px", height: "50px" }}
+                        />
+                      </Grid>
+
+                      <Grid item xs zeroMinWidth>
+                        <h4
+                          style={{ margin: 0, textAlign: "left", color: "red" }}
+                        >
+                          SlamHammy
+                        </h4>
+                        <p style={{ textAlign: "left" }}>
+                          I'm not particularly a fan of this... However, the shading is great. +1
+                          {" "}
+                        </p>
+                        <p style={{ textAlign: "left", color: "gray" }}>
+                          posted 12 days ago
+                        </p>
+                      </Grid>
+                    </Grid>
+
                   </div>
                 </div>
               </Paper>
