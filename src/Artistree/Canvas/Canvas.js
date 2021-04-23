@@ -181,7 +181,7 @@ class Canvas extends React.Component {
                 </Link>
                 <Link to="/">
                   <button className="canvas-sidebar-btn discard-btn">
-                    Discard
+                    Return to Gallery
                   </button>
                 </Link>
               </div>
