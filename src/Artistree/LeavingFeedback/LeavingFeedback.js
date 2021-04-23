@@ -194,7 +194,7 @@ export default function LeavingFeedback() {
               >
                 <h4>
                   Critique this artwork. Be sure to follow the Critiquing 
-                  <a href="/eula"> Guidelines</a>!
+                  <Link to="/eula"><a href="#"> Guidelines</a>!</Link>
                 </h4>
 
                 <div
