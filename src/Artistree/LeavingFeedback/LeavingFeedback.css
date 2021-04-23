@@ -11,9 +11,13 @@
 
 .heart-button {
     background-color: #068e03 !important;
-    width: 36px;
-    height: 36px;
+    width: 42px !important;
+    height: 42px !important;
     padding: 6px !important;
+    margin-right: 10px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 
 .heart-icon {

@@ -166,7 +166,7 @@ export default function LeavingFeedback() {
                   }}
                 />
               </Paper>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div style={{ display: "flex" }}>
                 <Button
                   className="heart-button"
                   onClick={() => setLiked(!liked)}
@@ -176,7 +176,7 @@ export default function LeavingFeedback() {
                   </span>
                 </Button>
                 <Button
-                  style={{ width: "100px", backgroundColor: "red" }}
+                  style={{ width: "100px", height: "42px", backgroundColor: "red" }}
                   onClick={() => setModalIsOpen(!modalIsOpen)}
                 >
                   Report
