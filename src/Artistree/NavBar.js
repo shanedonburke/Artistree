@@ -58,7 +58,7 @@ class NavBar extends React.Component {
                         <DropdownMenu>
                             <DropdownItem onClick={this.loginLogout}>{this.state.loginLogoutText}</DropdownItem>
                             <DropdownItem>Account</DropdownItem>
-                            <DropdownItem><Link to="/eula">EULA/Documentation</Link></DropdownItem>
+                            <DropdownItem><Link to="/eula" style={{color: "black"}}>EULA/Documentation</Link></DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
                 </div>
