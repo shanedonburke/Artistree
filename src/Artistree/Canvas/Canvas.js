@@ -179,7 +179,7 @@ class Canvas extends React.Component {
                     Post to Gallery
                   </button>
                 </Link>
-                <Link to="/Artistree">
+                <Link to="/">
                   <button className="canvas-sidebar-btn discard-btn">
                     Discard
                   </button>

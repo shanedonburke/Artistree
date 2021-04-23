@@ -14,7 +14,7 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route exact path="/Artistree">
+          <Route exact path="/">
             <Gallery />
           </Route>
           <Route exact path="/canvas">

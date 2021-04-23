@@ -30,9 +30,9 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className="navbar">
-                <Link to="/Artistree"><img className="logo" src={Logo} alt="Artistree Logo" /></Link>
+                <Link to="/"><img className="logo" src={Logo} alt="Artistree Logo" /></Link>
                 <div className="navbar-links">
-                    <Link to="/Artistree"><span className="navbar-link">Gallery</span></Link>
+                    <Link to="/"><span className="navbar-link">Gallery</span></Link>
                     <Link to="/canvas"><span className="navbar-link">Canvas</span></Link>
                     <Link to="/my-submissions"><span className="navbar-link">My Submissions</span></Link>
                 </div>
