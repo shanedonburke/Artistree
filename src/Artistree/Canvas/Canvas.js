@@ -174,7 +174,7 @@ class Canvas extends React.Component {
                 ></CanvasTool>
               </div>
               <div className="sidebar-btn-container">
-                <Link to="/my-submissions">
+                <Link to="/">
                   <button className="canvas-sidebar-btn post-to-canvas-btn">
                     Post to Gallery
                   </button>
