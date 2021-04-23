@@ -61,8 +61,10 @@ We have a EULA/Rules section that currently does not have anything in it but we 
 
 ## Bugs
 
-1. Currently we have an issue that when refreshing will cause the website to 404. We are not sure what the problem is but the core functionality of the website works fine as long as the user does not refresh. -- TO BE FIXED
-2. Another bug we have is that the EULA page does not get linked appropriately resulting in a 404. This worked while hosting it on our machines but hosting it on github pages results in the link throwing a 404.
+
+## Fixes
+1. Fixed a problem that occured on refreshing a page that would cause the website to 404.
+2. Fixed the linking problem so the EULA is now accessible through the proper means.
 
 ## Available Scripts
 
