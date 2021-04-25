@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   height: 100vh;
+  background-color: #70480D !important;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
