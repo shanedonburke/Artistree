@@ -57,8 +57,6 @@ As of right now, there is only one submission viewable from the “My Submission
 
 We have access to an account page there is no link to an account page. We have a very primitive login feature that does not actually “log” us into anything. 
 
-We have a EULA/Rules section that currently does not have anything in it but we intend to have a proper EULA.
-
 ## Bugs
 
 
