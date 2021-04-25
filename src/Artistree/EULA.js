@@ -14,13 +14,24 @@ class EULA extends React.Component {
                 <div className="title-bar">
                     <div>EULA</div>
                 </div>  
-                <div className="EULA-page-body" style={{textAlign:'center'}}> 
-
-                <iframe title="E" width="600" height="600" src="https://www.youtube.com/embed/cGw-8FrRT1E" frameborder="0" allowfullscreen></iframe>
-
-                <textarea className="EULA-scrollabletextbox" name="textbox">
-                    Get coconut malled
-                    </textarea>                   
+                <div className="EULA-page-body" style={{textAlign:'center'}}>
+                    
+                    <div style={{textAlign:'center'}}>
+                        User Guidelines
+                        <text>
+                            <br></br>
+                            1. Leave constructive feedback.
+                            <br></br>
+                            2. Avoid inappropriate comments.    
+                            <br></br>
+                            3. If a post is inappropriate, it may be reported using the report button.
+                            <br></br>
+                            4. Harmful comments are subject to removal.
+                            <br></br>
+                            5. Amogus
+                        </text>
+                    </div>
+                             
                 </div>
 
             </div>

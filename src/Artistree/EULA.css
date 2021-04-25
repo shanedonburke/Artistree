@@ -23,3 +23,9 @@
     font-size: 82%;
     overflow:scroll;
 }
+
+.EULA-page-body > div {
+    font-size: 36px;
+    color: white;
+    height: 100%;
+}
